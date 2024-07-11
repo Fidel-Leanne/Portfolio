@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import { FloatingNav } from '@/components/ui/FloatingNavbar';
 import { FaHome } from 'react-icons/fa';
 import Welcome from '@/components/Welcome'; // Import your updated Welcome component
+import RecentProjects from '@/components/RecentProjects';
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -29,6 +30,7 @@ const HomePage = () => {
           </h1>
           <Hero />
           <Grid />
+          <RecentProjects/>
         </div>
       )}
     </main>
