@@ -123,7 +123,7 @@ interface WelcomeProps {
       <AnimatePresence mode="wait" onExitComplete={onEnd}>
         {isVisible && (
           <motion.div
-            className="fixed inset-0 flex flex-col justify-center items-center bg-black-100 z-50 overflow-hidden"
+            className="fixed inset-0 flex flex-col justify-center items-center bg-teal-950 z-50 overflow-hidden"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
