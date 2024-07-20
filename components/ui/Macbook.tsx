@@ -71,7 +71,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[150vh]  flex flex-col items-center py-0 md:py-0 sm:py-0 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="h-[150vh]   flex flex-col items-center py-0 md:py-0 sm:py-0 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
     >
       <motion.h2
         style={{
@@ -82,8 +82,9 @@ export const MacbookScroll = ({
       >
         {title || (
           <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
-          </span>
+Let's build the future together— <br/>one line of code at a time.
+
+</span>
         )}
       </motion.h2>
       {/* Lid */}
@@ -165,7 +166,7 @@ export const Lid = ({
         }}
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
-        <div className="absolute inset-0 bg-[#818187] rounded-lg flex items-center justify-center">
+        <div className="absolute inset-0 rounded-lg flex items-center justify-center">
           <Techfact />
         </div>
       </motion.div>

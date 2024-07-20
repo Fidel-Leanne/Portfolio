@@ -12,6 +12,7 @@ import Clients from '@/components/Clients';
 import Experience from '@/components/Experience';
 import Approach from '@/components/Approach';
 import Footer from '@/components/Footer';
+import FutureEndevours from '@/components/FutureEndevours';
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -31,7 +32,8 @@ const HomePage = () => {
           <Clients/>
           <Experience/>
           <Approach/>
-          <Footer/>
+          <FutureEndevours/>
+        
         </div>
       )}
     </main>
