@@ -123,7 +123,7 @@ interface WelcomeProps {
       <AnimatePresence mode="wait" onExitComplete={onEnd}>
         {isVisible && (
           <motion.div
-            className="fixed inset-0 flex flex-col justify-center items-center bg-teal-950 z-50 overflow-hidden"
+            className="fixed inset-0 flex flex-col justify-center items-center bg-black-100 z-50 overflow-hidden"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -136,7 +136,7 @@ interface WelcomeProps {
               {words.map((word, index) => (
                 <motion.span
                   key={index}
-                  className="text-6xl text-white font-bold mb-2 inline-block mx-2"
+                  className="text-6xl text-yellow-600 font-bold mb-2 inline-block mx-2"
                   variants={itemVariants}
                 >
                   {word}
@@ -151,7 +151,7 @@ interface WelcomeProps {
               transition={{ type: "spring", stiffness: 260, damping: 20 }}
             >
               <motion.button
-                className="px-6 py-3 bg-white text-red-600 rounded-full text-xl font-semibold"
+                className="px-6 py-3 bg-white text-black-100 rounded-full text-xl font-semibold"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(255,255,255,0.5)" }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleExit}

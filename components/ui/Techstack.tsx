@@ -67,7 +67,7 @@ const TechStack: React.FC<TechStackProps> = ({ id }) => {
                 {category.list.map((item, i) => (
                   <span
                     key={i}
-                    className="py-2 px-3 text-sm lg:text-base rounded-lg text-center bg-indigo-900/30 hover:bg-[#002244] hover:text-orange-700 hover:text-lg transition duration-300 transform hover:scale-105"
+                    className="py-2 px-3 text-sm lg:text-base rounded-lg text-center bg-black-100 hover:bg-[#8a6508] hover:text-black-100 hover:font-bold hover:text-lg transition duration-300 transform hover:scale-105"
                   >
                     {item}
                   </span>

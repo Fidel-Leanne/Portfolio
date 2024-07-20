@@ -1,29 +1,21 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const Techfact = () => {
-  const [disabled, setDisabled] = useState(false);
-
-
+const TechFact = () => {
   return (
     <motion.div
-      className={`flex flex-col items-center justify-center h-full bg-teal-900/70 text-center p-4 ${
-        disabled ? 'pointer-events-none opacity-50' : ''
-      }`}
+      className="flex flex-col mi items-center justify-center h-full bg-teal-900/70 text-center p-4"
       initial={{ opacity: 1 }}
-      animate={{ opacity: disabled ? 0.5 : 1 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
       <h1 className="text-white text-4xl mb-4">Hello, World!</h1>
       <p className="text-white-100 mb-6">
-        Did you know? The first computer virus was created in 1983 and was named "Elk Cloner".
+        Did you know? The first computer virus was created in 1983 and was named &quot;Elk Cloner&quot;.
       </p>
-
-      
     </motion.div>
   );
 };
 
-export default Techfact;
+export default TechFact;
