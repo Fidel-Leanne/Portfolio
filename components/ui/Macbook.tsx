@@ -82,7 +82,7 @@ export const MacbookScroll = ({
       >
         {title || (
           <span>
-Let's build the future together— <br/>one line of code at a time.
+              Let&apos;s build the future together— <br/>one line of code at a time.
 
 </span>
         )}
