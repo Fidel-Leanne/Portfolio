@@ -69,56 +69,58 @@ export const MacbookScroll = ({
 
   return (
     <div
-      ref={ref}
-      className="h-[150vh]   flex flex-col items-center py-0 md:py-0 sm:py-0 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
-    >
-      <motion.h2
-        style={{
-          translateY: textTransform,
-          opacity: textOpacity,
-        }}
-        className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
-      >
-        {title || (
-          <span>
-              Let&apos;s build the future together— <br/>one line of code at a time.
-
-</span>
-        )}
-      </motion.h2>
-      {/* Lid */}
-      <Lid
-        src={src}
-        scaleX={scaleX}
-        scaleY={scaleY}
-        rotate={rotate}
-        translate={translate}
-      />
-      {/* Base area */}
-      <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
-        {/* above keyboard bar */}
-        <div className="h-10 w-full relative">
-          <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
-        </div>
-        <div className="flex relative">
-          <div className="mx-auto w-[10%] overflow-hidden  h-full">
-            <SpeakerGrid />
-          </div>
-          <div className="mx-auto w-[80%] h-full">
-            <Keypad />
-          </div>
-          <div className="mx-auto w-[10%] overflow-hidden  h-full">
-            <SpeakerGrid />
-          </div>
-        </div>
-        <Trackpad />
-        <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
-        {showGradient && (
-          <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
-        )}
-        {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
+  ref={ref}
+  className="h-[150vh] flex flex-col items-center py-0 md:py-0 sm:py-0 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100 sm:scale-[0.75] scale-[0.85]"
+>
+  <motion.h2
+    style={{
+      translateY: textTransform,
+      opacity: textOpacity,
+    }}
+    className="dark:text-white text-neutral-800 text-3xl font-bold mb-10 sm:mb-16 text-center"
+  >
+    {title || (
+      <span>
+        Let&apos;s build the future together—
+        <br />
+        one line of code at a time.
+      </span>
+    )}
+  </motion.h2>
+  {/* Lid */}
+  <Lid
+    src={src}
+    scaleX={scaleX}
+    scaleY={scaleY}
+    rotate={rotate}
+    translate={translate}
+  />
+  {/* Base area */}
+  <div className="h-[22rem] w-full sm:w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
+    {/* above keyboard bar */}
+    <div className="h-10 w-full relative">
+      <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
+    </div>
+    <div className="flex relative">
+      <div className="mx-auto w-[10%] overflow-hidden h-full">
+        <SpeakerGrid />
+      </div>
+      <div className="mx-auto w-[80%] h-full">
+        <Keypad />
+      </div>
+      <div className="mx-auto w-[10%] overflow-hidden h-full">
+        <SpeakerGrid />
       </div>
     </div>
+    <Trackpad />
+    <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
+    {showGradient && (
+      <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
+    )}
+    {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
+  </div>
+</div>
+
   );
 };
 
