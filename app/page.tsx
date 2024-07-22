@@ -13,30 +13,14 @@ import Experience from '@/components/Experience';
 import Approach from '@/components/Approach';
 import Footer from '@/components/Footer';
 import FutureEndevours from '@/components/FutureEndevours';
+import MainContent from '@/components/Landing';
 
 const HomePage = () => {
-  const [showContent, setShowContent] = useState(false);
 
   return (
-    <main className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
-      <Welcome onEnd={() => setShowContent(true)} /> {/* Render the updated Welcome component */}
-      {showContent && (
-        <div className="max-w-7xl w-full">
-          <FloatingNav
-            navItems={navItems}
-          />
-          
-          <Hero />
-          <Grid />
-          <RecentProjects/>
-          <Clients/>
-          <Experience/>
-          <Approach/>
-          <FutureEndevours/>
-        
-        </div>
-      )}
-    </main>
+      
+        <MainContent/>
+    
   );
 };
 

@@ -14,17 +14,18 @@ const RecentProjects = () => {
           </span>
         </h1>
 
-        <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-6 mt-10'>
+        <div className='flex flex-wrap sm:flex-wrap items-center justify-center p-4 gap-x-24 gap-y-6 mt-10'>
             {projects.map(({id,title,des,img,iconLists,link})=>(
-                <div key={id} className='lg:min-h-[32.5rem] sm:h-[41rem] h-[32rem] sm:w-[570px] flex items-center justify-center '>
+                <div key={id} className='lg:min-h-[32.5rem] sm:h-[41rem] h-[32rem] sm:w-[570px] w-full flex items-center justify-center'>
                 <PinContainer title={link} href={link}>
-                  <div className='relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] w-[80vw] overflow-hidden h-[30vh]  mb-10'>
+                  <div className='relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] w-full h-[30vh] mb-10 overflow-hidden'>
                     <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-purple'>
-                      <img src="/bg.png" alt="bg-img" />
+                      <img src="/bg.png" alt="bg-img" className='w-full h-full object-cover' />
                     </div>
-
-                    <img src={img} alt="" />
+                    <img src={img} alt="" className='absolute w-full h-full object-cover' />
                   </div>
+                
+              
 
                   <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
                     {title}

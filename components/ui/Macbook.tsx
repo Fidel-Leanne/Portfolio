@@ -23,7 +23,6 @@ import { IconWorld } from "@tabler/icons-react";
 import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
-import TechFact from "./Techfact";
 import Techfact from "./Techfact";
 
 
