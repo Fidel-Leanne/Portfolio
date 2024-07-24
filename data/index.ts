@@ -73,19 +73,19 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
+      title: "HooBank",
+      des: "A clean and modern React-powered banking website with intuitive navigation and responsive design with Tailwind.",
+      img: "/HooBank.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/Fideliahajdin?tab=repositories",
+      link: "https://hoobank-lake-eta.vercel.app/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
+      title: "Nikey Landing page",
+      des: "Sleek and professional e-commerce website with intuitive navigation, responsive design, and smooth performance,",
+      img: "/Nikey.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/Fideliahajdin/zoom-clone",
+      link: "https://nikey-beta.vercel.app/",
     },
     {
       id: 3,
@@ -101,7 +101,7 @@ export const navItems = [
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/p4.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/Fideliahajdin/iphone",
+      link: "https://apple-clone-sepia.vercel.app/",
     },
   ];
   
